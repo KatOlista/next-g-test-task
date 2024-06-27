@@ -101,7 +101,10 @@
 
   &__picture {
     flex: 40%;
-    z-index: 1;
+
+    @include onTablet {
+      z-index: 1;
+    }
   }
 
   &__img {
