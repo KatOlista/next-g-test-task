@@ -1,0 +1,50 @@
+.step {
+  padding: 80px 0 120px;
+  position: relative;
+  z-index: 1;
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 104%;
+    color: var(--dark-1-122d);
+
+    @include onDesktop {
+      font-size: 48px;
+    }
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    color: var(--grey);
+
+    @include onTablet {
+      max-width: 60%;
+    }
+  }
+
+  &__button {
+    border-radius: 8px;
+    padding: 8px 24px;
+    box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
+    background: var(--blue);
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 214%;
+    text-align: center;
+    color: #fff;
+  }
+}

@@ -1,0 +1,192 @@
+.reasons {
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 1;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    @include onTablet {
+      flex-direction: row;
+    }
+
+    @include onBigDesktop {
+      gap: 87px;
+      align-items: start;
+    }
+  }
+
+  &__picture {
+    width: 100%;
+
+    @include onTablet {
+      flex: 50%;
+    }
+
+    @include onDesktop {
+      flex: 30%;
+    }
+  }
+
+  &__img {
+    border-radius: 8px 8px 8px 0;
+    width: 100%;
+  }
+
+  &__info {
+    flex: 50%;
+
+    @include onDesktop {
+      flex: 70%;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 104%;
+    color: var(--dark-1-122d);
+
+    @include onTablet {
+      text-align: left;
+    }
+
+    @include onDesktop {
+      font-size: 48px;
+    }
+
+    @include onBigDesktop {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    color: var(--grey);
+
+    @include onBigDesktop {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__reasons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include onDesktop {
+      gap: 15px;
+    }
+
+    @include onBigDesktop {
+      gap: 30px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include onTablet {
+      flex-direction: row;
+    }
+
+    @include onDesktop {
+      gap: 10px;
+    }
+
+    @include onBigDesktop {
+      gap: 30px;
+    }
+  }
+
+  &__card {
+    flex: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @include onTablet {
+      flex-direction: row;
+      text-align-last: left;
+    }
+
+    @include onDesktop {
+      gap: 8px;
+    }
+
+    @include onBigDesktop {
+      gap: 15px;
+    }
+  }
+
+  &__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--blue);
+
+    @include onBigDesktop {
+      width: 56px;
+      height: 56px;
+    }
+  }
+
+  &__reason {
+    font-family: var(--font-family);
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--dark-1-122d);
+  }
+
+  &__why {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 147%;
+    color: var(--grey);
+  }
+
+  &__big {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+    }
+  }
+
+  &__small {
+    margin-top: 30px;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+}

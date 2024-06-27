@@ -1,0 +1,52 @@
+.contact {
+  padding: 40px 0;
+  position: relative;
+  z-index: 1;
+  background-color: var(--accent);
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+
+    @include onTablet {
+      flex-direction: row;
+      align-items: center;
+      gap: 0;
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    @include onDesktop {
+      gap: 10px;
+    }
+  }
+
+  &__info {
+    color: var(--dark-1-122d);
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 133%;
+
+    @include onDesktop {
+      font-size: 15px;
+    }
+  }
+}

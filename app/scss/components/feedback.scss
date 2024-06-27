@@ -1,0 +1,76 @@
+.feedback {
+  position: relative;
+  z-index: 1;
+
+  &__row {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 8px;
+    background-color: #fff;
+
+    @include onTablet {
+      padding-bottom: 80px;
+      flex-direction: row;
+      gap: 5%;
+    }
+
+    @include onDesktop {
+      gap: 10%;
+    }
+  }
+
+  &__card {
+    padding: 0px 0 40;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: var(--font-family);
+
+    @include onTablet {
+      padding: 0;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__stars {
+    width: 150%;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 147%;
+    color: #000;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+  }
+
+  &__photo {}
+
+  &__img {
+    width: 70%;
+  }
+
+  &__info {}
+
+  &__name {
+    font-weight: 600;
+  }
+
+  &__position {
+    font-weight: 400;
+    color: var(--grey);
+    font-size: 12px;
+  }
+}

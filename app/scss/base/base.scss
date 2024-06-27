@@ -1,0 +1,44 @@
+body {
+  min-width: 320px;
+  width: 100%;
+  max-width: 1920px;
+}
+
+button {
+  transition: all 0.3s ease;
+
+  @include onDesktop {
+    cursor: pointer;
+  
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+a {
+  cursor: default;
+
+  @include onDesktop {
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1170px;
+}
+
+.lock {
+  overflow: hidden;
+}

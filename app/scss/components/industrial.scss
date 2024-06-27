@@ -1,0 +1,111 @@
+.industrial {
+  padding: 0 0 80px;
+  position: relative;
+
+  &__top-bg {
+    display: none;
+
+    @include onTablet {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 80px;
+      height: 970px;
+      width: 50%;
+      background: url('../../images/green-big-arrow.png') top left/ 98% auto no-repeat;
+      z-index: 0;
+    }
+
+    @include onDesktop {
+      top: 30px;
+      width: 45%;
+    }
+
+    @include onBigDesktop {
+      top: 0;
+      height: 1460px;
+      width: 40%;
+    }
+  }
+
+  &__row {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 25px;
+    z-index: 1;
+
+    @include onTablet {
+      flex-direction: row-reverse;
+    }
+
+    @include onDesktop {
+      gap: 47px;
+    }
+  }
+
+  &__picture {
+    flex: 55%;
+
+    @include onDesktop {
+      flex: 50%;
+    }
+  }
+
+  &__img {
+    border-radius: 8px 8px 8px 0;
+    box-shadow: 0 0 35px rgba(28, 97, 194, 0.15);
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info {
+    flex: 45%;
+
+    @include onDesktop {
+      flex: 50%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 26px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 104%;
+    color: var(--dark-1-122d);
+
+    @include onDesktop {
+      font-size: 48px;
+    }
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    color: var(--grey);
+  }
+
+  &__marked {
+    font-weight: 700;
+  }
+
+  &__small {
+    padding-top: 20px;
+    
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__big {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+}

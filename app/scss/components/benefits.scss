@@ -1,0 +1,82 @@
+.benefits {
+  padding-bottom: 50px;
+  background-color: #f7fdfb;
+  position: relative;
+  text-align: center;
+
+  @include onDesktop {
+    padding-bottom: 75px;
+  }
+
+  &__top-bg {
+    display: none;
+
+    @include onTablet {
+      position: absolute;
+      left: 0;
+      top: 120px;
+      height: 890px;
+      width: 50%;
+      background: url('../../images/gray-big-arrow.png') top left/ 98% auto no-repeat;
+      z-index: 0;
+    }
+    
+
+    @include onDesktop {
+      width: 45%;
+    }
+
+    @include onBigDesktop {
+      top: 33px;
+      height: 1460px;
+      width: 40%;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 25px;
+
+    @include onTablet {
+      flex-direction: row;
+      gap: 15px;
+    }
+
+    @include onDesktop {
+      gap: 30px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+
+    @include onDesktop {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: var(--font-family);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--dark-1-122d);
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 147%;
+    color: var(--grey);
+  }
+}

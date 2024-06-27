@@ -1,0 +1,176 @@
+.header {
+  position: relative;
+  text-align: center;
+  background-color: #f7fdfb;
+
+  &__top-bg {
+    display: none;
+
+    @include onDesktop {
+      height: 790px;
+      position: absolute;
+      right: 0;
+      height: 590px;
+      width: 49%;
+      border-radius: 0 0 0 140px;
+      background: url('../../images/delivery.png') center center/ cover no-repeat;
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    @include onBigDesktop {
+      height: 890px;
+    }
+  }
+
+  &__row {
+    position: relative;
+    padding: 20px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+
+  &__logo {
+    width: 30px;
+
+    @include onDesktop {
+      width: 50px;
+    }
+  }
+
+  &__menu {
+    @media (max-width: 639px) {
+      padding: 0 0 50px;
+      display: none;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: fixed;
+      background-color: #f7fdfb;
+      z-index: 10;
+    }
+  }
+
+  &__nav {
+    @media (max-width: 639px) {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+    @include onTablet {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    @include onDesktop {
+      gap: 45px;
+    }
+  }
+
+  &__ul {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    @include onTablet {
+      padding: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    @include onDesktop {
+      gap: 45px;
+    }
+  }
+
+  &__li {
+    padding: 10px 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 187%;
+    text-align: center;
+    color: var(--grey);
+
+    & a:active {
+      color: var(--accent);
+    }
+
+
+    @include onTablet {
+      font-size: 16px;
+    }
+  }
+
+  &__button {
+    padding: 9px 25px;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 214%;
+    text-align: center;
+    color: #fff;
+    background-color: var(--blue);
+  }
+
+  &__active {
+    color: var(--dark-1-122d);
+    font-weight: 600;
+  }
+
+  &__menubtn {
+    display: block;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &__contact {
+    width: 100%;
+  }
+
+  &__close {
+    padding: 9px 25px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--blue);
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 214%;
+    text-align: center;
+    color: var(--blue);
+
+    &:active,
+    &:focus-visible,
+    &:focus-within {
+      border: 1px solid var(--blue) !important;
+    }
+
+    @include onTablet {
+      display: none;
+    }
+  }
+}
+
+.visible {
+  display: flex;
+  overflow: auto;
+}
