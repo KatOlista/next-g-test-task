@@ -40,8 +40,6 @@ function imagesMini() {
 }
 
 function getImages() {
-  // imagesAvif();
-  // imagesWebp();
   imagesMini();
 }
 

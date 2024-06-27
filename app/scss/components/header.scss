@@ -13,7 +13,7 @@
       height: 590px;
       width: 49%;
       border-radius: 0 0 0 140px;
-      background: url('../../images/delivery.png') center center/ cover no-repeat;
+      background: url('.././images/delivery.png') center center/ cover no-repeat;
       opacity: 0.15;
       z-index: 0;
     }
@@ -25,11 +25,15 @@
 
   &__row {
     position: relative;
-    padding: 20px 0 80px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+
+    @include onTablet {
+      padding: 20px 0 80px;
+    }
   }
 
   &__logo {
