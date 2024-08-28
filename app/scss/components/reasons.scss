@@ -126,7 +126,7 @@
 
     @include onTablet {
       flex-direction: row;
-      text-align-last: left;
+      text-align: left;
     }
 
     @include onDesktop {
