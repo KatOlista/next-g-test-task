@@ -18,7 +18,6 @@
   }
 
   &__picture {
-    display: none;
 
     @include onTablet {
       flex: 50%;

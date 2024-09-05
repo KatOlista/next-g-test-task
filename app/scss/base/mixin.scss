@@ -10,11 +10,6 @@
   }
 }
 
-// @mixin onBigDesktop {
-//   @media (min-width: 1440px) {
-//     @content;
-//   }
-
 @mixin onBigDesktop {
   @media (min-width: 1170px) {
     @content;

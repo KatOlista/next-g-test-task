@@ -7,19 +7,20 @@
     display: none;
 
     @include onDesktop {
-      height: 790px;
+      height: 794px;
+      width: 620px;
       position: absolute;
+      display: block;
       right: 0;
-      height: 590px;
-      width: 49%;
       border-radius: 0 0 0 140px;
-      background: url('.././images/delivery.png') center center/ cover no-repeat;
+      background: url('../images/delivery.png') center center/ cover no-repeat;
       opacity: 0.15;
       z-index: 0;
     }
 
     @include onBigDesktop {
       height: 890px;
+      width: 927px;
     }
   }
 

@@ -11,7 +11,7 @@ The home page was built using responsive design principles, ensuring a smooth an
 ## Getting Started
 
 1. Clone the repository:
-### `git clone https://github.com/KatOlista/next-g-test-task.git`
+### `git clone https://github.com/KatOlista/respirators.git`
 
 2. Install dependencies:
 
@@ -19,7 +19,7 @@ The home page was built using responsive design principles, ensuring a smooth an
 
 3. Start the development server:
 
-### `npm gulp`
+### `gulp`
 
 
 ## Used Technologies
