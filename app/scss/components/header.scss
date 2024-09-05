@@ -8,7 +8,7 @@
 
     @include onDesktop {
       height: 794px;
-      width: 620px;
+      width: 560px;
       position: absolute;
       display: block;
       right: 0;
@@ -19,8 +19,8 @@
     }
 
     @include onBigDesktop {
-      height: 890px;
-      width: 927px;
+      height: 894px;
+      width: 730px;
     }
   }
 

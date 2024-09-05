@@ -1,7 +1,7 @@
 # Masks Home Page
 
 <p align="center">
-  <a href="https://katolista.github.io/next-g-test-task/">
+  <a href="https://katolista.github.io/respirators/">
     <strong>MASKS DEMO</strong>
   </a>
 </p>
