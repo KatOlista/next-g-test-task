@@ -12,11 +12,15 @@ const hideMenuHandler = () => {
   menu.classList.add('animate__slideOutUp');
   page.classList.remove('lock');
 
+  console.log('gtrh');
+
   setTimeout(() => {
-    menu.classList.remove('visible'); 
+    menu.classList.remove('visible');
   }, 1500)
 };
 
 document.getElementsByClassName('header__menubtn')[0].addEventListener('click', showMenuHandler);
 
 document.getElementsByClassName('header__close')[0].addEventListener('click', hideMenuHandler);
+
+document.getElementsByClassName('header__ul')[0].addEventListener('click', hideMenuHandler);

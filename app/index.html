@@ -30,13 +30,13 @@
                     <a href="">Home</a>
                   </li>
                   <li class="header__li">
-                    <a href="./">About</a>
+                    <a href="#about">About</a>
                   </li>
                   <li class="header__li">
-                    <a href="./">Product</a>
+                    <a href="#product">Product</a>
                   </li>
                   <li class="header__li">
-                    <a href="./">Contact</a>
+                    <a href="#contact">Contact</a>
                   </li>
                   <li class="header__li">
                     <a href="./">History</a>
@@ -78,7 +78,7 @@
         </div>
       </div>
     </section>
-    <section class="benefits">
+    <section id="about" class="benefits">
       <div class="benefits__top-bg"></div>
     
       <div class="container">
@@ -149,7 +149,7 @@
         </div>
       </div>
     </section>
-    <section class="medical">
+    <section id="product" class="medical">
       <div class="container">
         <div class="medical__row">
           <div class="medical__picture">
@@ -575,7 +575,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="container">
         <ul class="contact__row">
           <li class="contact__card">
@@ -597,13 +597,13 @@
               <img src="./images/sprite.svg#blue-phone" class="svg-blue-phone-dims" alt="blue-phone">
             </div>
     
-            <div class="contact__info">
+            <a href="tel: +1 123 456 7890" class="contact__info">
               <h3 class="contact__title">Call Us</h3>
     
               <p class="contact__text">
                 +1 123 456 7890
               </p>
-            </div>
+            </a>
           </li>
     
           <li class="contact__card">
@@ -611,11 +611,11 @@
               <img src="./images/sprite.svg#blue-mail" class="svg-blue-mail-dims" alt="blue-mail">
             </div>
     
-            <div class="contact__info">
+            <a href="mailto: info@example.com" class="contact__info">
               <h3 class="contact__title">Email Us</h3>
     
               <p class="contact__text">info@example.com</p>
-            </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -623,8 +623,8 @@
 
     <footer class="footer">
       <div class="container">
-        <ul class="footer__row">
-          <li class="footer__card">
+        <div class="footer__row">
+          <div class="footer__card">
             <div class="footer__picture">
               <a href="./" class="logo">
                 <img src="./images/sprite.svg#logo" class="svg-logo-dims" alt="logo">
@@ -634,69 +634,71 @@
             <p class="footer__text">
               Our team is led by several chief engineers, composed of a large number of researchers absorbed in their work in our comprehensive laboratory, which is also a renowned medical equipment testing center in Hong Kong. 
             </p>
-          </li>
+          </div>
     
-          <li class="footer__card">
-            <h3 class="footer__title">
-              Company
-            </h3>
-    
-            <ul class="footer__list">
-              <li>
-                <a  class="footer__text" href="./">Home</a>
-              </li>
-    
-              <li>
-                <a class="footer__text" href="./">About</a>
-              </li>
-    
-              <li>
-                <a class="footer__text" href="./">Product</a>
-              </li>
-    
-              <li>
-                <a class="footer__text" href="./">Contact</a>
-              </li>
-    
-              <li>
-                <a class="footer__text" href="./">History</a>
-              </li>
-            </ul>
-          </li>
-    
-          <li class="footer__card">
-            <h3 class="footer__title">
-              Follow us
-            </h3>
-    
-            <ul class="footer__list">
-              <li class="footer__media">
-                <img src="./images/facebook-3-32.png" alt="icon">
-                <a class="footer__text" target="_blank" href="https://www.facebook.com/">Facebook</a>
-              </li>
-    
-              <li class="footer__media">
-                <img src="./images/twitter-32.png" alt="icon">
-                <a class="footer__text" target="_blank" href="https://x.com/">Twitter</a>
-              </li>
-    
-              <li class="footer__media">
-                <img src="./images/google-plus-3-32.png" alt="icon">
-                <a class="footer__text" target="_blank" href="https://www.google.com/">Google +</a>
-              </li>
-    
-              <li class="footer__media">
-                <img src="./images/youtube-32.png" alt="icon">
-                <a class="footer__text" target="_blank" href="https://www.youtube.com/">Youtube</a>
-              </li>
-    
-              <li class="footer__media">
-                <img src="./images/linkedin-6-32.png" alt="icon">
-                <a class="footer__text" target="_blank" href="https://www.linkedin.com/">Linkedin</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+          <div class="footer__links">
+            <div class="footer__card">
+              <h3 class="footer__title">
+                Company
+              </h3>
+      
+              <ul class="footer__list">
+                <li>
+                  <a  class="footer__text" href="./">Home</a>
+                </li>
+      
+                <li>
+                  <a class="footer__text" href="./">About</a>
+                </li>
+      
+                <li>
+                  <a class="footer__text" href="./">Product</a>
+                </li>
+      
+                <li>
+                  <a class="footer__text" href="./">Contact</a>
+                </li>
+      
+                <li>
+                  <a class="footer__text" href="./">History</a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="footer__card">
+              <h3 class="footer__title">
+                Follow us
+              </h3>
+      
+              <ul class="footer__list">
+                <li class="footer__media">
+                  <img src="./images/facebook-3-32.png" alt="icon">
+                  <a class="footer__text" target="_blank" href="https://www.facebook.com/">Facebook</a>
+                </li>
+      
+                <li class="footer__media">
+                  <img src="./images/twitter-32.png" alt="icon">
+                  <a class="footer__text" target="_blank" href="https://x.com/">Twitter</a>
+                </li>
+      
+                <li class="footer__media">
+                  <img src="./images/google-plus-3-32.png" alt="icon">
+                  <a class="footer__text" target="_blank" href="https://www.google.com/">Google +</a>
+                </li>
+      
+                <li class="footer__media">
+                  <img src="./images/youtube-32.png" alt="icon">
+                  <a class="footer__text" target="_blank" href="https://www.youtube.com/">Youtube</a>
+                </li>
+      
+                <li class="footer__media">
+                  <img src="./images/linkedin-6-32.png" alt="icon">
+                  <a class="footer__text" target="_blank" href="https://www.linkedin.com/">Linkedin</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
     
         <div class="footer__rights">
           Copyright &#x24D2; 2024 N95

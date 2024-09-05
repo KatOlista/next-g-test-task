@@ -4,6 +4,10 @@
   z-index: 1;
   background-color: var(--accent);
 
+  a:hover {
+    color: inherit;
+  }
+
   &__row {
     display: flex;
     justify-content: space-between;
@@ -22,9 +26,14 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    transition: transform 0.3s ease;
 
     @include onDesktop {
       gap: 10px;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 
